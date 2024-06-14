@@ -14,7 +14,7 @@ export default function ReviewScreen({ route, navigation }) {
   <Text style={styles.buttonText}>Take a new quiz</Text>
 </TouchableOpacity>
       <Text style={styles.title}>Your Score: {score}</Text>
-      <Text style={styles.subtitle}>Number of Correct Answers: {correctAnswersCount}</Text>
+      <Text style={styles.subtitle}>Number of Correct Answers: {correctAnswersCount} out of {questions.length}</Text>
       {questions.map((question, index) => (
         <View key={index} style={styles.card}>
           <Text style={styles.questionText}>{question.text}</Text>
